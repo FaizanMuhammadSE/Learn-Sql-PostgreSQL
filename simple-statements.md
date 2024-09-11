@@ -49,12 +49,15 @@
   - We can write SQL to transform or process data before we receive it
 
 - Retrieving
+
   - `SELECT * FROM table_name;`
   - `SELECT col_1, col_2 FROM table_name;`
   - ```SELECT col_1, col_2 * col_3 AS calculated_column
     FROM table_name;
     ```
+
 - String Operators And Functions
+
   - || join two strings
   - CONCAT join strings
   - LOWER gives a lowecase string
