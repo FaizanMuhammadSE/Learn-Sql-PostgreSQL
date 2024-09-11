@@ -52,8 +52,9 @@
 
   - `SELECT * FROM table_name;`
   - `SELECT col_1, col_2 FROM table_name;`
-  - ```SELECT col_1, col_2 * col_3 AS calculated_column
-    FROM table_name;
+  - ```
+    SELECT col_1, col_2 * col_3 AS calculated_column
+      FROM table_name;
     ```
 
 - String Operators And Functions
