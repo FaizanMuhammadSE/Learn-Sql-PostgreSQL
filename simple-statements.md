@@ -42,3 +42,21 @@
 
   - `INSERT INTO cities (name, population) values ('Delhi', 234567), ('Lahore', '1000000');`
   - Just make sure insert data in the **_same order_** in which you mention column names
+
+- Transforming
+
+  - SQL isn't just about pulling raw data out of a table
+  - We can write SQL to transform or process data before we receive it
+
+- Retrieving
+  - `SELECT * FROM table_name;`
+  - `SELECT col_1, col_2 FROM table_name;`
+  - ```SELECT col_1, col_2 * col_3 AS calculated_column
+    FROM table_name;
+    ```
+- String Operators And Functions
+  - || join two strings
+  - CONCAT join strings
+  - LOWER gives a lowecase string
+  - LENGTH gives length of string
+  - UPPER gives an uppercase string
