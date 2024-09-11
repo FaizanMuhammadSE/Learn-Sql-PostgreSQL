@@ -22,12 +22,12 @@
 - Keywords
 
   - Tell database that we want to do something.
-  - Always written out in capital letters
+  - Always written out in **_capital_** letters
 
 - Identifiers
 
   - Tell the database what thing we want to act on.
-  - Always written out in small letters
+  - Always written out in **_small_** letters
 
 - Column Data Types
 
@@ -36,9 +36,9 @@
 
 - Creating Table
 
-  - CREATE TABLE cities (name VARCHAR(50), population INTEGER);
+  - `CREATE TABLE cities (name VARCHAR(50), population INTEGER);`
 
 - Inserting Data in Table
 
-  - INSERT INTO cities (name, population) values ('Delhi', 234567), ('Lahore', '1000000')
-  - Just make sure insert data in the same order in which you mention column names
+  - `INSERT INTO cities (name, population) values ('Delhi', 234567), ('Lahore', '1000000');`
+  - Just make sure insert data in the **_same order_** in which you mention column names
