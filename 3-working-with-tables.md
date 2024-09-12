@@ -16,7 +16,15 @@
   ```
   CREATE TABLE boats (id INTEGER SERIAL PRIMARY KEY, name VARCHAR);
   ```
+  - Foreign Key can't have Non-Existing PK value
+  - Foreign Key can have Null or duplicated PK value
   - For Foreign Key Setting in PostgreSQL
   ```
   CREATE TABLE boat_crew (id INTEGER SERIAL PRIMAY KEY, username VARCHAR, boat_id REFERENCES boats(id))
   ```
+  - Primary Key Delete Constraints (when we try to delete a row in table, but its Foreign Key exists in related tabel)
+    - **ON DELETE CASCADE**: Automatically deletes the rows in the child_table / foreign_key_rows when the corresponding row in the parent table is deleted.
+    - **ON DELETE SET NULL**: Sets the Foreign Key column to NULL when the corresponding row in the parent table is deleted.
+    - **ON DELETE RESTRICT**: Prevents the deletion of a row in the parent table if there are matching rows in the child table.
+    - **ON DELETE NO ACTION**: Similar to RESTRICT, but the check is done after attempting to delete the row.
+    - **ON DELETE SET DEFAULT**: Sets the Foreign Key column to its default value when the corresponding row in the parent table is deleted.
