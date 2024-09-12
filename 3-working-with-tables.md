@@ -9,9 +9,10 @@
 - These relationships represented through Primary Key & Foreign Key
   - Primary Key is a unique identifier for each row in a table
   - Foreign Key is a reference to other table row
-  - The **-Many-** side of the relationship gets the Foreign Key column
+  - The **_Many_** side of the relationship gets the Foreign Key column
 - Primary Key and Foreign Key should set while creating Tables
   - For Primary Key Setting in PostgreSQL
+  - **_SERIAL_** keywords serves the purpose of auto generation of key
   ```
   CREATE TABLE boats (id INTEGER SERIAL PRIMARY KEY, name VARCHAR);
   ```
