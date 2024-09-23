@@ -42,3 +42,18 @@ FROM
 FROM phones
 GROUP BY manufacturer) AS p
 ```
+
+#### JOIN
+
+- We can use subquery in join as well
+- Subquery can return any type of data structure but should be be compatible with `ON`
+- Example
+
+```
+SELECT p.name, c.name AS category_name
+FROM products p
+JOIN
+(SELECT category_id, category_name
+FROM categories WHERE category_id = 3) AS c
+ON p.category_id = c.category_id
+```
