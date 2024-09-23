@@ -77,3 +77,27 @@ ON p.category_id = c.category_id
           SELECT price FROM phones WHERE manufacturer = 'Samsung'
       );
       ```
+
+### Co-related Subqueries
+
+- A subquery that depends on the outer query
+- The term correlated subquery essentially means that we are referring to some row from the outside query in the inner/subquery
+- In outside query we give alias, and inside subquery we access that row through alias
+- Example: Show the name, department, and price of the most expensive product in each departement
+- ```
+  SELECT name, department, price
+  FROM products AS p1
+  WHERE p1.price = (SELECT MAX(price) FROM product AS p2 WHERE p2.department = p1.department)
+  ```
+- In Correlated SubQuery, subquery runs for each row
+
+### SELECT without FROM
+
+- We can use subquery in select, when subquery is returning a single value
+- Example
+- ```
+  SELECT
+   (SELECT MAX(price) FROM phones) AS max_price,
+   (SELECT MIN(price) FROM phones) AS min_price,
+   (SELECT AVG(price) FROM phones) AS avg_price,
+  ```
