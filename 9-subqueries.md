@@ -57,3 +57,23 @@ JOIN
 FROM categories WHERE category_id = 3) AS c
 ON p.category_id = c.category_id
 ```
+
+#### WHERE
+
+- We can use subquery in `WHERE` clause as well
+- Subquery can return any type of data structure but should be be compatible with the **_Operator_** in `WHERE` clause
+- Operators Vs Subquery Data-Structure
+  - Single Value
+    - `<` | `>` | `>=` | `<=` | `=` | `<>` or `!=`
+  - Single Column
+    - `IN` | `NOT IN` | `> ALL` | `> SOME` | `< ALL` | `< SOME` | `>= ALL`| `>= SOME` | `<= ALL` | `<= SOME` | `= ALL` | `= SOME` | `<> ALL` | `<> SOME`
+    - Note: ANY, SOME both keywords can be used for same purpose
+    - Write a query that prints the name of all phones that have a price greater than all phones made by Samsung.
+    - Solution
+      ```
+      SELECT name
+      FROM phones
+      WHERE price > ALL (
+          SELECT price FROM phones WHERE manufacturer = 'Samsung'
+      );
+      ```
