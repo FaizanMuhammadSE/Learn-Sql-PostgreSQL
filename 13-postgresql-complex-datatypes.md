@@ -1,6 +1,7 @@
 - There are various Categories of types
-- Each category has further lot of options to decide
+- Each category has further lot of types from which we can decide
 - Categories like Number, Boolean, Character etc
+- Categories like number have various types e.g SERIAL, BIGSERIAL, INTEGER, FLOAT, DOUBLE etc
 
 ### Numbers
 
