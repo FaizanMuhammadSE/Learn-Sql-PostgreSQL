@@ -12,3 +12,10 @@
      - Bank Balance, grams of gold, scientific calculations
   4. Need to store a number with a decimal and the decimal doesn't make a big difference **->** Mark the column as `double precision` or `float` or `real`
      - Kilograms of trash in a landfill, liters of water in a lake, air pressure in a tire
+
+### CHARACTERS
+
+- `CHAR(5)` **->** Store some characters, length will always be 5 even postgres has to insert spaces
+- `VARCHAR` **->** Store any length of string
+- `VARCHAR(40)` **->** Store any string up to 40 characters, automatically remove extra characters
+- `TEXT` Store any length of string
