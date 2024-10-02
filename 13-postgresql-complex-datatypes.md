@@ -25,3 +25,12 @@
 - `true` `yes` `on` `1` `t` `y` will be considered as `TRUE`
 - `false` `no` `off` `0` `f` `n` will be considered as `FALSE`
 - `null` will be considered as `NULL`
+
+### DATES and TIMES
+
+- PostgreSQL is very flexible in terms of time
+- We can imagine any format of time, postgresql gonna understand it and store in a same manner
+- `DATE` type can store date in any format, e.g '1980 November 20', 'Nov 20, 1980'
+- `TIME` or `TIME WITHOUT TIME ZONE` type can store time without time zone, it contains hours, minutes, seconds, AM/PM or even 24 hours format e.g '01: 23 AM', '05:23 PM', '20:34'
+- `TIME WITH TIME ZONE` type can store time with time-zone, and eventually save it in UTC format e.g '01:23 AM EST' **->** 01:23-05:00 (-5 means 5 hours behind UTC)
+- `TIMESTAMP WITH TIME ZONE` type can store everything related time like date, time, timezoen e.g 'NOV-20-1980 1:23 AM PST' **->** 1980-11-20 02:23:00-07
