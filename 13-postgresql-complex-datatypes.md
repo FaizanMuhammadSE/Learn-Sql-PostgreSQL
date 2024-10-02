@@ -19,3 +19,9 @@
 - `VARCHAR` **->** Store any length of string
 - `VARCHAR(40)` **->** Store any string up to 40 characters, automatically remove extra characters
 - `TEXT` Store any length of string
+
+### Boolean Types
+
+- `true` `yes` `on` `1` `t` `y` will be considered as `TRUE`
+- `false` `no` `off` `0` `f` `n` will be considered as `FALSE`
+- `null` will be considered as `NULL`
