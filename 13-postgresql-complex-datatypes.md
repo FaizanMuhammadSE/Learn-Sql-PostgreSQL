@@ -34,3 +34,12 @@
 - `TIME` or `TIME WITHOUT TIME ZONE` type can store time without time zone, it contains hours, minutes, seconds, AM/PM or even 24 hours format e.g '01: 23 AM', '05:23 PM', '20:34'
 - `TIME WITH TIME ZONE` type can store time with time-zone, and eventually save it in UTC format e.g '01:23 AM EST' **->** 01:23-05:00 (-5 means 5 hours behind UTC)
 - `TIMESTAMP WITH TIME ZONE` type can store everything related time like date, time, timezoen e.g 'NOV-20-1980 1:23 AM PST' **->** 1980-11-20 02:23:00-07
+
+### INTERVAL
+
+- Think of an interval as a duration of time
+- `1 day` **->** `1 day`
+- `1 D` **->** `1 day`
+- `1 D 1 M 1 S` **->** `1 day 1 minute 1 second`
+- Even though we can do operation on intervals adding, subtracting etc
+- We can also add, subtraction intervals from data as well
