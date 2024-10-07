@@ -1,0 +1,8 @@
+- Working with large database, make concept more clear
+- So we will be designing database for bigger systems e.g Instagram
+- Normally we use Schema designer tools to visually understand the relation between tables, and its column
+  - dbdiagram.io
+  - drawsql.app
+  - sqldbm.com
+  - ondras.zarovi.cz/sql/demo (open source)
+  - etc
